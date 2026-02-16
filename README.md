@@ -1,18 +1,21 @@
-# Aarons3225 Angie
+# Angie Homebrew Tap
 
-## How do I install these formulae?
+Homebrew tap for [Angie](https://angie.software/), an efficient web server forked from nginx.
 
-`brew install aarons3225/angie/<formula>`
-
-Or `brew tap aarons3225/angie` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "aarons3225/angie"
-brew "<formula>"
+## Installation
+```bash
+brew tap aarons3225/angie
+brew install angie
 ```
 
-## Documentation
+## Usage
+```bash
+# Start Angie
+angie
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+# Reload configuration
+angie -s reload
+
+# Stop
+angie -s stop
+```
